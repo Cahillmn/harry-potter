@@ -1,33 +1,123 @@
 <template>
-<main></main>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/blog">Blog</router-link>
-    <router-link to="/characters">Characters</router-link> |
-    <router-link to="/store">Store</router-link> |
+<header>
+    <img class="banner" src="./assets/banner.png" alt="Harry Potter logo">
+  </header>
+  <div id="app">
+    <nav>
+      <font-awesome-icon icon="fas fa-bolt" />
+    <ul>
+    <li><router-link to="/">Home</router-link></li> 
+    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><router-link to="/blog">Blog</router-link></li>
+    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><router-link to="/characters">Characters</router-link></li> 
+    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><router-link to="/store">Store</router-link></li> 
+    </ul>
+    </nav>
   </div>
   <router-view/>
+  <footer>
+        <p>&copy; Copyright 2021</p>
+        <p>Store images from https://harrypottershop.com</p>
+        <p>Book images from https://amazon.com</p>
+    
+    </footer>
+
 </template>
 
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#nav {
-  padding: 30px;
+header {
+    background-color: black;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    .banner {
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 
-    &.router-link-exact-active {
-      color: #42b983;
     }
-  }
+}
+
+nav {
+    background-color: rgb(121, 80, 27);
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    li {
+        color: gold;
+        list-style-type: none;
+        padding: 1rem;
+        padding-right: 1.5rem;
+        transition: transform 2s;
+
+        a {
+            color: gold;
+        }
+    }
+
+    li:hover {
+        transform: scale(1.25, 1.25);
+    }
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+
+}
+
+main {
+    min-height: 400px;
+
+    h1 {
+        color: brown;
+        padding-top: 3rem;
+        text-align: center;
+
+    }
+
+    
+
+    h2 {
+        color: brown;
+        text-align: center;
+
+    }
+
+    
+}
+
+footer {
+    min-height: 7rem;
+    background-color: black;
+    color: gold;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align:center;
+
+    p {
+    padding-top: .5rem;
+    }
 }
 </style>
