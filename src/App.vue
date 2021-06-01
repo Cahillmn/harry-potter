@@ -4,14 +4,14 @@
   </header>
   <div id="app">
     <nav>
-      <font-awesome-icon icon="fas fa-bolt" />
+      <font-awesome-icon icon="faUserSecret" />
     <ul>
     <li><router-link to="/">Home</router-link></li> 
-    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><font-awesome-icon icon="faUserSecret" /></li>
     <li><router-link to="/blog">Blog</router-link></li>
-    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><font-awesome-icon icon="faUserSecret" /></li>
     <li><router-link to="/characters">Characters</router-link></li> 
-    <li><i class="fas fa-bolt" aria-hidden="true"></i></li>
+    <li><font-awesome-icon icon="faUserSecret" /></li>
     <li><router-link to="/store">Store</router-link></li> 
     </ul>
     </nav>
@@ -27,8 +27,17 @@
 </template>
 
 <script>
+
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+      FontAwesomeIcon
+  }
 }
 </script>
 
