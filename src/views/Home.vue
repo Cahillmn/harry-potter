@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style lang="scss">
-img {
+.trio, .book-image {
   display: block;
   margin-left: auto;
   margin-right: auto;

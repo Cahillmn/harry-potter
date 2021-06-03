@@ -21,7 +21,7 @@
         </article>
 
         <article class="blog">
-            <img src="../assets/wand.jpeg" alt="Harry Potter holding a wand">
+            <img src="../assets/wand.png" alt="Harry Potter holding a wand">
             <section>
                 <h3>What Type of Wand Suits You?</h3>
                 <p>Phasellus faucibus eros pharetra ultricies dignissim. Donec nec sagittis nisi. Quisque lobortis dolor
@@ -60,7 +60,7 @@
         </article>
 
         <article class="blog">
-            <img src="../assets/series.jpeg" alt="Harry Potter characters">
+            <img src="../assets/series.png" alt="Harry Potter characters">
             <section>
                 <h3>Harry Potter Series Coming to HBO Max!</h3>
                 <p>Phasellus faucibus eros pharetra ultricies dignissim. Donec nec sagittis nisi. Quisque lobortis dolor
@@ -89,20 +89,18 @@ main {
         padding-top: 2rem;
     }
 
-    img {
-        width: 25%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 3rem;
-    }
-
     .blog {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
         padding-top: 2rem;
+
+        img {
+        max-width: 25%;
+        display: block;
+        padding-left: 3rem;
+    }
 
         section {
             padding-left: 2rem;

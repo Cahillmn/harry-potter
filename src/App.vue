@@ -4,14 +4,13 @@
   </header>
   <div id="app">
     <nav>
-      <font-awesome-icon icon="faUserSecret" />
     <ul>
     <li><router-link to="/">Home</router-link></li> 
-    <li><font-awesome-icon icon="faUserSecret" /></li>
+    <li><font-awesome-icon :icon="['fas', 'bolt']" /></li>
     <li><router-link to="/blog">Blog</router-link></li>
-    <li><font-awesome-icon icon="faUserSecret" /></li>
+    <li><font-awesome-icon :icon="['fas', 'bolt']" /></li>
     <li><router-link to="/characters">Characters</router-link></li> 
-    <li><font-awesome-icon icon="faUserSecret" /></li>
+    <li><font-awesome-icon :icon="['fas', 'bolt']" /></li>
     <li><router-link to="/store">Store</router-link></li> 
     </ul>
     </nav>
