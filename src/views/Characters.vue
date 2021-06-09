@@ -39,44 +39,157 @@
      
       </form>
     </div>
-       {{ list }}
+       <h2>{{ name }}</h2>
+       <p>{{ species }}</p>
+       <p>{{ gender }}</p>
+       <p>{{ dateOfBirth }}</p>
+       <p>{{ ancestry }}</p>
+       <p>{{ eyeColour }}</p>
+       <p>{{ hairColour }}</p>
+       <p>{{ wand }}</p>
+       <p>{{ patronus }}</p>
+       <p>{{ actor }}</p>
+       <img v-bind:src="image">
     </div>
   </main>
 </template>
 
+
 <script>
+
+
 export default {
-  name: "Home",
+
+
+  name: "List",
+
+
   data() {
+
+
     return {
-      list: '',
-      name: '',
-      species: '',
-      gender: '',
-      house: '',
-      dateOfBirth: '',
-      ancestry: '',
-      eyeColour: '',
-      hairColour: '',
-      wand: '',
-      patronus: '',
-      actor: '',
-      image: '',
+
+
+      characters: [],
+
+
+      name: " ",
+
+
+      species: " ",
+
+
+      gender: " ",
+
+
+      house: " ",
+
+
+      dateOfBirth: " ",
+
+
+      ancestry: " ",
+
+
+      eyeColour: " ",
+
+
+      hairColour: " ",
+
+
+      wand: " ",
+
+
+      patronus: " ",
+
+
+      actor: " ",
+
+
+      image: " ",
+
+
     };
+
+
   },
+
+
   methods: {
+
+
     getData() {
-      fetch("http://hp-api.herokuapp.com/api/characters")
+
+
+      fetch("https://hp-api.herokuapp.com/api/characters")
+
+
         .then((response) => {
+
+
           console.log(response);
-          return response.json();
+
+
+          if (response.ok) {
+
+
+            return response.json();
+
+
+          } else {
+
+
+            throw new Error("Request failed with");
+
+
+          }
+
+
         })
+
+
         .then((json) => {
+
+
           console.log(json);
-          this.list = json;
-        });
+
+
+          this.characters = json;
+
+
+          json.forEach((el, index) => {
+
+
+            console.log(this.name);
+
+            if (el.name === this.name) {
+              this.name = el.name
+              this.species = el.species
+              this.gender = el.gender
+              this.house = el.house
+              this.dateOfBirth = el.dateOfBirth
+              this.ancestry = el.ancestry
+              this.eyeCoulour = el.eyeColour
+              this.hairColour = el.hairColour
+              this.wand = el.wand
+              this.patronus = el.patronus
+              this.actor = el.actor
+              this.image = el.image
+            }
+
+          });
+
+
+        })
+
+
+        .catch((err) => alert("ERROR", err));
+
+
     },
+
   },
+
 };
 
 </script>
