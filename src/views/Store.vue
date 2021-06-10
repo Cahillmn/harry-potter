@@ -124,6 +124,7 @@ main {
         background-color: gold;
         color: rgb(121, 80, 27);
         font-weight: bold; 
+        width: 30%;
     }
 
     h2 {
@@ -150,6 +151,7 @@ main {
 
         button {
             margin-top: 0rem;
+            width: 50%;
         }
     }
 
