@@ -155,6 +155,12 @@ main {
         }
     }
 
+    @media screen and (max-width: 575px) {
+      .discount {
+        width: 90%;
+      }
+    }
+
     h3 {
         color: rgb(238, 118, 118);
         padding-top: 1rem;

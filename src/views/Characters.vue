@@ -41,7 +41,7 @@
       </div>
       <img v-bind:src="image" />
       <h2>{{ name }}</h2>
-      <div class="characteristics">
+      <div v-if="actor" class="characteristics">
       <p><span>Species: </span>{{ species }}</p>
       <p><span>Gender: </span>{{ gender }}</p>
       <p><span>Date of Birth: </span>{{ dateOfBirth }}</p>
@@ -73,7 +73,7 @@ export default {
       hairColour: " ",
       wand: " ",
       patronus: " ",
-      actor: " ",
+      actor: "",
       image: " ",
     };
   },
@@ -124,6 +124,13 @@ export default {
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 575px) {
+  .names {
+    width: 75%;
+    margin-left: 4rem;
+  }
+}
+
 label {
     font-weight: bold;
 }
@@ -142,7 +149,7 @@ select {
 }
 
 button {
-    width: 5rem;
+    width: 10rem;
     font-weight: bold;
     margin-left: 1rem;
     background-color: rgb(121, 80, 27);

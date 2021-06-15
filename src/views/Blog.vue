@@ -110,7 +110,46 @@ main {
         h3 {
             padding-bottom: 1rem;
         }
+
+        p{
+            color: black;
+        }
     }
+
+    @media screen and (max-width: 575px) {
+
+    .blog {
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    .blog img {
+        width: 75%;
+        padding-bottom: 2rem;
+    }
+
+    aside {
+        display: none
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1279px) {
+
+    .blog {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .blog img {
+        width: 75%;
+        padding-bottom: 2rem;
+    }
+
+    aside {
+        display: none
+    }
+}
 
 
 }

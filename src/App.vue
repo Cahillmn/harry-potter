@@ -119,12 +119,12 @@ main {
 footer {
     min-height: 7rem;
     background-color: black;
-    color: gold;
     padding-top: 2rem;
     margin-top: 2rem;
     text-align:center;
 
     p {
+    color: gold;
     padding-top: .5rem;
     }
 }

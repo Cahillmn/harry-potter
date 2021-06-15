@@ -147,6 +147,10 @@ export default {
   padding-top: 3rem;
 }
 
+p{
+  color: black;
+}
+
 .intro {
   text-align: center;
   padding: 3rem 5rem;
@@ -162,6 +166,13 @@ export default {
     width: 20%;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 575px) {
+
+    .books {
+      width: 80%
+    }
   }
 
   .book-image {
