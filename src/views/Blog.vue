@@ -93,7 +93,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
+    align-content: flex-start;
     padding-top: 2rem;
 
     img {

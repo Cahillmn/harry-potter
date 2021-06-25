@@ -105,21 +105,15 @@ main {
 
     }
 
-    
-
     h2 {
         color: brown;
         text-align: center;
 
     }
 
-    
-
     p {
         color: black;
     }
-
-    
 }
 
 footer {

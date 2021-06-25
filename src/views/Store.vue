@@ -189,7 +189,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    // text-align: center;
     margin-top: 2rem;
 
     h3 {
