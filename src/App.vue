@@ -114,6 +114,12 @@ main {
     }
 
     
+
+    p {
+        color: black;
+    }
+
+    
 }
 
 footer {

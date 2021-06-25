@@ -4,8 +4,7 @@
     <article class="blog">
       <img
         src="../assets/sorting-hat.jpeg"
-        alt="Harry Potter wearing the sorting hat"
-      />
+        alt="Harry Potter wearing the sorting hat">
       <section>
         <h3>Which House Would You End Up In?</h3>
         <p>
@@ -24,7 +23,7 @@
     </article>
 
     <article class="blog">
-      <img src="../assets/wand.png" alt="Harry Potter holding a wand" />
+      <img src="../assets/wand.png" alt="Harry Potter holding a wand">
       <section>
         <h3>What Type of Wand Suits You?</h3>
         <p>
@@ -45,8 +44,7 @@
     <article class="blog">
       <img
         src="../assets/quidditch.jpeg"
-        alt="Harry Potter playing quidditch"
-      />
+        alt="Harry Potter playing quidditch">
       <section>
         <h3>Local Quidditch Matches Coming to All Major Cities!</h3>
         <p>
@@ -65,7 +63,7 @@
     </article>
 
     <article class="blog">
-      <img src="../assets/series.png" alt="Harry Potter characters" />
+      <img src="../assets/series.png" alt="Harry Potter characters">
       <section>
         <h3>Harry Potter Series Coming to HBO Max!</h3>
         <p>
@@ -111,10 +109,13 @@ main {
 
     h3 {
       padding-bottom: 1rem;
+      color: black;
+    //   text-align: left;
     }
 
     p {
       color: black;
+    //   text-align: left;
     }
   }
 
@@ -122,11 +123,18 @@ main {
     .blog {
       width: 100%;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .blog img {
-      width: 75%;
+      max-width: 75%;
       padding-bottom: 2rem;
+      padding-left: 0;
+
+    }
+
+    h3 {
+        text-align: center;
     }
 
     aside {
