@@ -147,13 +147,14 @@ export default {
   padding-top: 3rem;
 }
 
-p{
+p {
   color: black;
 }
 
 .intro {
   text-align: center;
   padding: 3rem 5rem;
+  color: black;
 }
 
 .container {

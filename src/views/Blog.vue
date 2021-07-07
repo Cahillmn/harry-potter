@@ -110,12 +110,12 @@ main {
     h3 {
       padding-bottom: 1rem;
       color: black;
-    //   text-align: left;
+      text-align: left;
     }
 
     p {
       color: black;
-    //   text-align: left;
+      text-align: left;
     }
   }
 
