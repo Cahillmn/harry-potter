@@ -110,7 +110,7 @@ main {
     .title {
       padding-bottom: 1rem;
       color: black;
-      text-align: left;
+      text-align: left !important;
     }
 
     p {
