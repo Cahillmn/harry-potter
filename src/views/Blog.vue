@@ -6,7 +6,7 @@
         src="../assets/sorting-hat.jpeg"
         alt="Harry Potter wearing the sorting hat">
       <section>
-        <h3>Which House Would You End Up In?</h3>
+        <h3 class="title">Which House Would You End Up In?</h3>
         <p>
           Phasellus faucibus eros pharetra ultricies dignissim. Donec nec
           sagittis nisi. Quisque lobortis dolor vel turpis tempus, non mollis
@@ -25,7 +25,7 @@
     <article class="blog">
       <img src="../assets/wand.png" alt="Harry Potter holding a wand">
       <section>
-        <h3>What Type of Wand Suits You?</h3>
+        <h3 class="title">What Type of Wand Suits You?</h3>
         <p>
           Phasellus faucibus eros pharetra ultricies dignissim. Donec nec
           sagittis nisi. Quisque lobortis dolor vel turpis tempus, non mollis
@@ -46,7 +46,7 @@
         src="../assets/quidditch.jpeg"
         alt="Harry Potter playing quidditch">
       <section>
-        <h3>Local Quidditch Matches Coming to All Major Cities!</h3>
+        <h3 class="title">Local Quidditch Matches Coming to All Major Cities!</h3>
         <p>
           Phasellus faucibus eros pharetra ultricies dignissim. Donec nec
           sagittis nisi. Quisque lobortis dolor vel turpis tempus, non mollis
@@ -65,7 +65,7 @@
     <article class="blog">
       <img src="../assets/series.png" alt="Harry Potter characters">
       <section>
-        <h3>Harry Potter Series Coming to HBO Max!</h3>
+        <h3 class="title">Harry Potter Series Coming to HBO Max!</h3>
         <p>
           Phasellus faucibus eros pharetra ultricies dignissim. Donec nec
           sagittis nisi. Quisque lobortis dolor vel turpis tempus, non mollis
@@ -107,7 +107,7 @@ main {
       padding-right: 2rem;
     }
 
-    h3 {
+    .title {
       padding-bottom: 1rem;
       color: black;
       text-align: left;
