@@ -2,6 +2,7 @@
   "name": "harry-potter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Cahillmn.github.io/harry-potter/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
