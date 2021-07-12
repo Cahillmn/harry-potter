@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="characters-page">
     <div class="home">
       <h1>Characters</h1>
       <div class="characters-search">
@@ -42,15 +42,15 @@
       <img v-bind:src="image" />
       <h2>{{ name }}</h2>
       <div v-if="actor" class="characteristics">
-      <p><span>Species: </span>{{ species }}</p>
-      <p><span>Gender: </span>{{ gender }}</p>
-      <p><span>Date of Birth: </span>{{ dateOfBirth }}</p>
-      <p><span>Ancestry: </span>{{ ancestry }}</p>
-      <p><span>Eye Color: </span>{{ eyeColour }}</p>
-      <p><span>Hair Color: </span>{{ hairColour }}</p>
-      <p><span>Wand: </span>{{ wand }}</p>
-      <p><span>Patronus: </span>{{ patronus }}</p>
-      <p><span>Actor: </span>{{ actor }}</p>
+        <p><span>Species: </span>{{ species }}</p>
+        <p><span>Gender: </span>{{ gender }}</p>
+        <p><span>Date of Birth: </span>{{ dateOfBirth }}</p>
+        <p><span>Ancestry: </span>{{ ancestry }}</p>
+        <p><span>Eye Color: </span>{{ eyeColour }}</p>
+        <p><span>Hair Color: </span>{{ hairColour }}</p>
+        <p><span>Wand: </span>{{ wand }}</p>
+        <p><span>Patronus: </span>{{ patronus }}</p>
+        <p><span>Actor: </span>{{ actor }}</p>
       </div>
     </div>
   </main>
@@ -116,62 +116,63 @@ export default {
 </script>
 
 <style lang="scss">
-.names {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin-top: 4rem;
-}
-
-@media screen and (max-width: 575px) {
+.characters-page {
   .names {
-    width: 75%;
-    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4rem;
   }
-}
 
-label {
+  @media screen and (max-width: 575px) {
+    .names {
+      width: 75%;
+      margin-left: 4rem;
+    }
+  }
+
+  label {
     font-weight: bold;
-}
+  }
 
-h2 {
+  h2 {
     padding-bottom: 1rem;
-}
+  }
 
-p {
+  p {
     font-size: 1.5rem;
-}
+  }
 
-select {
+  select {
     min-height: 2rem;
     font-size: 1.5rem;
-}
+  }
 
-button {
+  button {
     width: 10rem;
     font-weight: bold;
     margin-left: 1rem;
     background-color: rgb(121, 80, 27);
     color: gold;
-}
+  }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
 
-.characteristics {
+  .characteristics {
     margin: auto;
     width: 40%;
     padding-left: 20%;
-}
+  }
 
-span {
+  span {
     font-weight: bold;
+  }
 }
-
 </style>

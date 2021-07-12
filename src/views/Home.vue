@@ -1,5 +1,5 @@
 <template>
-  <main class="main home">
+  <main class="main home home-page">
     <img
       class="trio"
       src="../assets/trio.jpeg"
@@ -17,10 +17,9 @@
       malesuada ut nisi. Cras mauris diam, accumsan eu est id, vulputate
       consequat orci. Phasellus pharetra dolor et auctor congue. Suspendisse
       porttitor in mi suscipit bibendum. Sed semper enim iaculis odio rutrum
-      ornare. Cras mauris diam, accumsan eu est id, vulputate
-      consequat orci. Phasellus pharetra dolor et auctor congue. Suspendisse
-      porttitor in mi suscipit bibendum. Sed semper enim iaculis odio rutrum
-      ornare.
+      ornare. Cras mauris diam, accumsan eu est id, vulputate consequat orci.
+      Phasellus pharetra dolor et auctor congue. Suspendisse porttitor in mi
+      suscipit bibendum. Sed semper enim iaculis odio rutrum ornare.
     </p>
 
     <h2>The Books</h2>
@@ -142,56 +141,58 @@ export default {
 </script>
 
 <style lang="scss">
-.trio, .book-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  padding-top: 3rem;
-}
-
-p {
-  color: black;
-}
-
-.intro {
-  text-align: center;
-  padding: 3rem 5rem;
-  color: black;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .books {
-    width: 20%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  @media screen and (max-width: 575px) {
-
-    .books {
-      width: 80%
-    }
-  }
-
+.home-page {
+  .trio,
   .book-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2rem;
+    width: 40%;
+    padding-top: 3rem;
   }
 
-  .book-info {
+  p {
+    color: black;
+  }
+
+  .intro {
     text-align: center;
+    padding: 3rem 5rem;
+    color: black;
   }
 
-  .book-info p {
-    padding-top: 1rem;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .books {
+      width: 20%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      .books {
+        width: 80%;
+      }
+    }
+
+    .book-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2rem;
+    }
+
+    .book-info {
+      text-align: center;
+    }
+
+    .book-info p {
+      padding-top: 1rem;
+    }
   }
 }
 </style>

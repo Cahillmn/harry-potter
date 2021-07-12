@@ -1,5 +1,5 @@
 <template>
-  <main class="main four">
+  <main class="main four blog-page">
     <h1>The Official Harry Potter Blog!</h1>
     <article class="blog">
       <img
@@ -84,7 +84,7 @@
 </template>
 
 <style lang="scss">
-main {
+main.blog-page{
   h2 {
     padding-top: 2rem;
   }
