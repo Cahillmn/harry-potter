@@ -7,10 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "vue-cli-service start",
-    "test": "vue-cli-service test",
-    "eject": "vue-cli-service eject"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
